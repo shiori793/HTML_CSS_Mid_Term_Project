@@ -1,0 +1,504 @@
+/* all */
+* {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+:root {
+    --main-text-color: #FF5F00;
+    --main-text-hover-color: #FF904E;
+    --main-grey-color: #646363;
+}
+
+html, body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+audio {
+    display: none;
+}
+
+/* header */
+header {
+    border-bottom: 2px solid var(--main-grey-color);
+    position: fixed;
+    width: 100vw;
+    height: 50px;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.logo path {
+    color: var(--main-text-color);
+}
+
+#logo-text {
+    margin-left: 10px;
+    color: var(--main-text-color);
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}
+
+header ul {
+    display: flex;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding-right: 50px;
+    padding-left: 0;
+    align-items: center;
+}
+
+header li {
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-item:hover span, .nav-item:hover path, .nav-item:active span, .nav-item:active path {
+    color: var(--main-text-hover-color);
+    transition: all 0.2s ease;
+}
+
+.nav-item.active span, .nav-item.active path {
+    color: var(--main-text-color);
+}
+
+#search {
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    border: 2px solid var(--main-grey-color);
+    outline: none;
+}
+
+#search:focus {
+    outline: none;
+    border: 2px solid var(--main-text-hover-color);
+}
+
+#search-button  {
+    position: relative;
+    right: 40px;
+    border: none;
+}
+
+#search-button:hover, #search-button:hover path, #search-button:active, #search-button:active path {
+    cursor: pointer;
+    color: var(--main-text-hover-color);
+    transition: all 0.2s ease;
+}
+
+.smp-item {
+    display: none;
+}
+
+/* main contents */
+main {
+    margin-top: 72px;
+    padding: 20px;
+}
+
+/* home */
+.list-contents {
+    display: flex;
+    align-items: center;
+}
+
+.scroll-button {
+    font-size: 20px;
+    height: 150px;
+    border: 1px solid var(--main-grey-color);
+}
+
+.prev-btn {
+    border-radius: 10px 0 0 10px;
+}
+
+.next-btn {
+    border-radius: 0 10px 10px 0;
+}
+
+.scroll-button:hover, .scroll-button:active {
+    cursor: pointer;
+}
+
+.scroll-button:hover path, .scroll-button:active path {
+    color: var(--main-text-hover-color);
+}
+
+.songlist {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    width: 90%;
+}
+
+.songlist::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    padding: 10px;
+    margin: 10px;
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+
+.card:hover, .card:hover .listSongName, .card:hover .listArtistName, .card:active, .card:active .listSongName, .card:active .listArtistName {
+    background-color: rgb(41, 41, 41);
+    cursor: pointer;
+}
+
+.musicListPicture {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.listSongName {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.listArtistName {
+    margin-top: 0;
+}
+
+/* detail */
+.detail-all {
+    margin: 20px;
+}
+
+.detail-info {
+    display: flex;
+}
+
+.musicDetailPicture {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: var(--main-grey-color);
+    object-fit: cover;
+}
+
+.detail-text {
+    margin-left: 50px;
+    font-size: large;
+}
+
+.detail-buttons {
+    display: flex;
+}
+
+.detail-buttons button, .sell-music-info button {
+    border-radius: 10px;
+    width: 200px;
+    height: 35px;
+    font-size: 15px;
+    margin-right: 20px;
+}
+
+.black-button, .black-button path {
+    border: 2px solid var(--main-text-color);
+    color: var(--main-text-color);
+}
+
+.black-button:hover, .black-button:hover path, .black-button:active, .black-button:active path {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.orange-button, .orange-button svg, .orange-button path {
+    background-color: var(--main-text-color);
+    color: #000;
+}
+
+.orange-button:hover, .orange-button:hover path, .orange-button:active, .orange-button:active path {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.detail-description {
+    margin: 20px;
+    line-height: 2;
+}
+
+/* sell music */
+.sell-list {
+    display: flex;
+}
+
+.sell-list button {
+    margin-left: 20px;
+    font-size: 1.5em;
+}
+
+.sell-list button:hover, .sell-list button:hover path, .sell-list button:active, .sell-list button:active path {
+    cursor: pointer;
+    color: var(--main-text-hover-color);
+}
+
+.sell-music-info {
+    display: flex;
+}
+
+.sell-music-text, .sell-music-file {
+    padding: 0 20px;
+    width: 50%;
+}
+
+.sell-music-file-contents {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.sell-music-file-contents .form-group {
+    width: 50%;
+}
+
+.sell-music-file button {
+    float: right;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 5px 20px 5px;
+}
+
+.form-group input[type=text], .form-group input[type=number], .form-group textarea {
+    background-color: var(--main-grey-color);
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    padding: 3px 3px 3px 10px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+}
+
+.form-group input[type=text], .form-group input[type=number] {
+    height: 30px;
+}
+
+.form-group input[type=text]:focus, .form-group input[type=number]:focus, .form-group textarea:focus {
+    outline: none;
+}
+
+.form-group input[type=file] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.form-group input[type=file]:hover, .form-group input[type=file]:active {
+    cursor: pointer;
+}
+
+.upload-picture, .upload-audio {
+    position: relative;
+    width: 90%;
+    padding-top: 90%;
+    background-color: var(--main-grey-color);
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+.upload-picture.dragover, .upload-audio.dragover, .upload-picture:hover, .upload-audio:hover {
+    opacity: 0.8;
+}
+
+.upload-picture svg, .upload-audio svg {
+    background-color: var(--main-grey-color);
+    font-size: 30px;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.upload-picture.selected svg, .upload-audio.selected svg {
+    display: none;
+}
+
+/* tablet */
+@media (max-width: 1000px) and (min-width: 700px) {
+    #logo-text {
+        width: 60px;
+        font-size: 20px;
+    }
+    
+    .menu-text {
+        display: none;
+    }
+
+    .detail-buttons {
+        flex-direction: column;
+    }
+
+    .detail-buttons button, .sell-music-info button {
+        margin-bottom: 20px;
+    }
+
+    .sell-music-info {
+        flex-direction: column;
+    }
+
+    .sell-music-text, .sell-music-file {
+        width: 90%;
+    }
+}
+
+/* smartphone */
+@media (max-width: 700px) {
+    .menu {
+        position: absolute;
+        top: 72px;
+        right: 20px;
+        transform: translateX(140px);
+    }
+
+    .menu.active {
+        transition: ease .4s;
+        transform: translateX(0);
+    }
+
+    header ul {
+        flex-direction: column;
+        padding: 0;
+        width: 140px;
+    }
+
+    header li {
+        border-bottom: 1px solid var(--main-grey-color);
+        margin: 0;
+        padding: 20px;
+    }
+
+    .toggle {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 50px;
+        height: 40px;
+        background-color: transparent;
+        border: transparent;
+        cursor: pointer;
+    }
+
+    .toggle span {
+        height: 2px;
+        background-color: var(--main-grey-color);
+        position: relative;
+        transition: ease .4s;
+        display: block;
+    }
+
+    .toggle span:nth-child(1) {
+        top: 0;
+    }
+
+    .toggle.active span:nth-child(1) {
+        top: 10px;
+        transform: rotate(45deg);
+    }
+
+    .toggle span:nth-child(2) {
+        margin: 10px 0;
+    }
+
+    .toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .toggle span:nth-child(3) {
+        top: 0;
+    }
+
+    .toggle.active span:nth-child(3) {
+        top: -13px;
+        transform: rotate(-45deg);
+    }
+
+    .smp-item {
+        display: inline;
+    }
+
+    .desktop-item {
+        display: none;
+    }
+
+    .musicListPicture {
+        width: 100px;
+        height: 100px;
+    }
+
+    .detail-info {
+        flex-direction: column;
+        margin: 0 20px;
+    }
+
+    .detail-text {
+        margin-left: 0;
+    }
+
+    .detail-buttons {
+        flex-direction: column;
+    }
+
+    .detail-buttons button, .sell-music-info button {
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .sell-music-info {
+        flex-direction: column;
+    }
+
+    .sell-music-text, .sell-music-file {
+        width: 90%;
+    }
+    
+    .sell-music-file-contents {
+        flex-direction: column;
+    }
+
+    .sell-music-info button {
+        float: none;
+    }
+
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Music Place</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h5>
+                    <a href="./index.html">
+                        <div class="logo">
+                            <i class="fa-solid fa-m"></i>
+                            <div id="logo-text"> Music Place</div>
+                        </div>
+                    </a>
+                </h5>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="./index.html" class="button nav-item">
+                                <i class="fa-solid fa-house"></i>
+                                <span class="menu-text"> Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./library.html" class="nav-item active">
+                                <i class="fa-solid fa-music"></i>
+                                <span class="menu-text"> Library</span>
+                            </a>
+                        </li>
+                        <li class="desktop-item">
+                            <form action="" method="post">
+                                <input type="search" name="search" id="search" placeholder="Search">
+                                <button type="submit" id="search-button">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </form>
+                        </li>
+                        <li class="smp-item">
+                            <a href="" class="nav-item">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <span class="menu-text"> Search</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="nav-item">
+                                <i class="fa-solid fa-gear"></i>
+                                <span class="menu-text smp-item"> Setting</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <button class="toggle smp-item">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>        
+        </header>
+        <main>
+            <section>
+                <h1>Music you bought</h1>                        
+                <div class="list-contents">
+                    <button class="prev-btn scroll-button desktop-item">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <div class="songlist">
+                        <div class="card">
+                            <a href="">
+                                <img src="./image/image-11.jpg" class="musicListPicture" alt onerror="this.onerror=null;this.src='./image/no-image.png'">
+                                <p class="listSongName">Song Name</p>
+                                <p class="listArtistName">Artist Name</p>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="">
+                                <img src="./image/image-16.jpg" class="musicListPicture" alt onerror="this.onerror=null;this.src='./image/no-image.png'">
+                                <p class="listSongName">Song Name</p>
+                                <p class="listArtistName">Artist Name</p>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="">
+                                <img src="#" class="musicListPicture" alt onerror="this.onerror=null;this.src='./image/no-image.png'">
+                                <p class="listSongName">Song Name</p>
+                                <p class="listArtistName">Artist Name</p>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="">
+                                <img src="./image/image-12.jpg" class="musicListPicture" alt onerror="this.onerror=null;this.src='./image/no-image.png'">
+                                <p class="listSongName">Song Name</p>
+                                <p class="listArtistName">Artist Name</p>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="">
+                                <img src="./image/image-17.jpg" class="musicListPicture" alt onerror="this.onerror=null;this.src='./image/no-image.png'">
+                                <p class="listSongName">Song Name</p>
+                                <p class="listArtistName">Artist Name</p>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="">
+                                <img src="#" class="musicListPicture" alt onerror="this.onerror=null;this.src='./image/no-image.png'">
+                                <p class="listSongName">Song Name</p>
+                                <p class="listArtistName">Artist Name</p>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="">
+                                <img src="./image/image-18.jpg" class="musicListPicture" alt onerror="this.onerror=null;this.src='./image/no-image.png'">
+                                <p class="listSongName">Song Name</p>
+                                <p class="listArtistName">Artist Name</p>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="">
+                                <img src="./image/image-13.jpg" class="musicListPicture" alt onerror="this.onerror=null;this.src='./image/no-image.png'">
+                                <p class="listSongName">Song Name</p>
+                                <p class="listArtistName">Artist Name</p>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="">
+                                <img src="#" class="musicListPicture" alt onerror="this.onerror=null;this.src='./image/no-image.png'">
+                                <p class="listSongName">Song Name</p>
+                                <p class="listArtistName">Artist Name</p>
+                            </a>
+                        </div>
+                    </div>
+                    <button class="next-btn scroll-button desktop-item">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+            </section>
+
+            <section>
+                <div class="sell-list">
+                    <h1>Music you sell</h1>
+                    <button type="" onclick="location.href='./sell_music.html'">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+                <div class="list-contents">
+                    <button class="prev-btn scroll-button desktop-item">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <div class="songlist">
+                        <div class="card">
+                            <a href="">
+                                <img src="./image/image-14.jpg" class="musicListPicture" alt onerror="this.onerror=null;this.src='./image/no-image.png'">
+                                <p class="listSongName">Song Name</p>
+                                <p class="listArtistName">Artist Name</p>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="">
+                                <img src="#" class="musicListPicture" alt onerror="this.onerror=null;this.src='./image/no-image.png'">
+                                <p class="listSongName">Song Name</p>
+                                <p class="listArtistName">Artist Name</p>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="">
+                                <img src="./image/image-15.jpg" class="musicListPicture" alt onerror="this.onerror=null;this.src='./image/no-image.png'">
+                                <p class="listSongName">Song Name</p>
+                                <p class="listArtistName">Artist Name</p>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="">
+                                <img src="#" class="musicListPicture" alt onerror="this.onerror=null;this.src='./image/no-image.png'">
+                                <p class="listSongName">Song Name</p>
+                                <p class="listArtistName">Artist Name</p>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="">
+                                <img src="#" class="musicListPicture" alt onerror="this.onerror=null;this.src='./image/no-image.png'">
+                                <p class="listSongName">Song Name</p>
+                                <p class="listArtistName">Artist Name</p>
+                            </a>
+                        </div>
+                    </div>
+                    <button class="next-btn scroll-button desktop-item">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+            </section>
+        </main>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
