@@ -256,6 +256,7 @@ main {
 .sell-list button {
     margin-left: 20px;
     font-size: 1.5em;
+    border: none;
 }
 
 .sell-list button:hover, .sell-list button:hover path, .sell-list button:active, .sell-list button:active path {
